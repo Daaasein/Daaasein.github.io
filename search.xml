@@ -1,27 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/10/03/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>Boy or Man, that is the question...</title>
+    <url>/2023/10/04/Boy-or-Man-that-is-the-question/</url>
+    <content><![CDATA[<p>在广州天环广场的啤酒音乐节现场，听到了梦化乐队的《难道我们不是在天上》：</p>
+<p><a href="https://music.163.com/#/song?id=1470989909">难道我们不是在天上 - 梦化 - 单曲 - 网易云音乐 (163.com)</a></p>
+<p>主唱给我的第一印象是男人，但音乐一开始，偶尔使用方言的歌词、身体跟着节奏摆动，立刻就变成了快乐的男孩。是的，我会在心里将男性分类：男孩和男人。</p>
+<p>男人往往远远就能被雷达探测到，一般来说是这样的：他们或明显、或隐约的，向外辐射出攻击性，让人感觉不安全。他们身上带有一种匪气、江湖气，坐下时两腿喜欢张得很开，说话时语调僵硬而缺少韵律感，喜欢以过来人的姿态指导别人的生活。与他们初次聊天的话题离不开姓氏，从姓氏引申到宗族，讲述自家族谱里“据说哪一代哪一代”的光耀（这哪里好聊…）。或者是询问你的家乡，然后不等你问就主动说出自己的家乡，“我是xxx的，我们那儿有xxx，你们那儿 没有&#x2F;不是这个样子的 吧？”，“你们那儿的人 很能吃&#x2F;吃不了 这么 酸&#x2F;甜&#x2F;苦&#x2F;辣&#x2F;咸 的东西吧？”。所有这些都让人想远离，他们不是男孩，他们已不再可爱了。</p>
+<p>但有时，雷达也会不准，远远望去的男人，实际接触下来，原来是个男孩。</p>
+<p>男孩不会释放出攻击性，甚至会刻意避免因男性身份而可能给人带来的危险感。男孩懂得礼貌，不会因身份、职业、性别而待人有别，不会给人添麻烦、提出可能过分的要求，或开令人难堪的玩笑。考虑周全的男孩会随身带一小包纸巾；中二男孩会突然念出蜡笔小新或七龙珠的台词；科比男孩会走路时突然停下，后撤一步虚拟投篮；善良男孩打伞时全遮了别人，自己淋透了大半边身子；绝地求生男孩会背着一个巨大的登山包每日通勤，里面装着镁棒、求生口哨和三包压缩饼干；外向男孩通过自嘲让朋友们大笑；内向男孩也能保持倾听，用行动解决问题。男孩多可爱啊。</p>
+<p>不幸的是，男孩可能成为男人，但未成型的男人在身边男孩的影响下，也有重返男孩的可能。</p>
+<p>哎，永远当个男孩吧，男孩多可爱啊。</p>
 ]]></content>
       <categories>
-        <category>Guide</category>
+        <category>Journals</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Create a blog</title>
+    <url>/2023/10/04/Create-a-blog/</url>
+    <content><![CDATA[<p>这里是一个使用 Hexo 和 GitHub Pages 搭建个人博客的基础步骤指南：</p>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ol>
+<li><p><strong>安装 Node.js 和 NPM</strong>: 请访问 <a href="https://nodejs.org/">Node.js 官网</a> 下载并安装 Node.js，这将同时安装 NPM（Node Package Manager）。</p>
+</li>
+<li><p><strong>安装 Git</strong>: 如果您还没有安装 Git，您需要安装它以便与 GitHub 进行交互。请访问 <a href="https://git-scm.com/">Git 官网</a> 以下载和安装。</p>
+</li>
+</ol>
+<h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><ol start="3">
+<li><strong>全局安装 Hexo</strong>: 打开命令行（Windows 下是 CMD 或 PowerShell，macOS 和 Linux 下是 Terminal），然后运行以下命令： <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+ <figure class="highlight plaintext"><figcaption><span>global</span></figcaption><table><tr><td class="code"><pre><span class="line">### 初始化您的 Hexo 项目</span><br><span class="line"></span><br><span class="line">4. **创建并初始化新项目**: 在命令行中，转到您希望创建项目的目录，然后运行：</span><br><span class="line">    ```bash</span><br><span class="line">    hexo init my-blog</span><br><span class="line">    cd my-blog</span><br><span class="line">    npm install # 它会查找一个名为 `package.json` 的文件。这个文件列出了项目所需的所有 NPM 包（依赖）。然后，NPM 会下载并安装这些依赖到 `my-blog` 目录下的 `node_modules` 子目录。</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h3><ol start="5">
+<li><strong>启动 Hexo 服务器</strong>：在 <code>my-blog</code> 目录下运行以下命令，然后在浏览器中访问 <code>http://localhost:4000</code> 查看效果。 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="配置-Hexo"><a href="#配置-Hexo" class="headerlink" title="配置 Hexo"></a>配置 Hexo</h3><ol start="6">
+<li><strong>编辑配置文件</strong>: 在 <code>my-blog</code> 目录中，您会找到一个 <code>_config.yml</code> 文件。使用任意文本编辑器打开它并进行相关设置，例如您的博客标题、描述等。</li>
+</ol>
+<h3 id="创建您的第一篇文章"><a href="#创建您的第一篇文章" class="headerlink" title="创建您的第一篇文章"></a>创建您的第一篇文章</h3><ol start="7">
+<li><p><strong>新建文章</strong>: 运行以下命令以创建一个新文章。</p>
+ <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;My First Post&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>编辑文章</strong>: 打开 <code>source/_posts/My-First-Post.md</code> 文件，然后开始编写您的第一篇文章。您可以使用 Markdown 语法。</p>
+</li>
+</ol>
+<h3 id="部署到-GitHub-Pages"><a href="#部署到-GitHub-Pages" class="headerlink" title="部署到 GitHub Pages"></a>部署到 GitHub Pages</h3><ol start="9">
+<li><p><strong>创建 GitHub 仓库</strong>: 访问 <a href="https://github.com/">GitHub</a>，创建一个新的仓库，名为 <code>username.github.io</code>（<code>username</code> 是您的 GitHub 用户名）。</p>
+</li>
+<li><p><strong>配置部署</strong>: 在 <code>_config.yml</code> 文件中，找到 <code>deploy</code> 部分，并进行如下设置：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">&lt;repository</span> <span class="string">url&gt;</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>安装部署插件</strong>: 在 <code>my-blog</code> 目录下运行以下命令以安装 Hexo 的 Git 部署插件：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><figcaption><span>将依赖项记录在`package.json`中，利于其他开发者克隆项目并运行`npm install`时，NPM会查看`package.json`文件，并自动安装所有列出的依赖项，无需手动一个一个安装。注意：从NPM 5.0.0版本开始，`--save`是默认行为。</span></figcaption><table><tr><td class="code"><pre><span class="line">12. **部署网站**: 在 `my-blog` 目录下运行以下命令以将网站部署到 GitHub Pages：</span><br><span class="line">    ```bash</span><br><span class="line">    hexo clean</span><br><span class="line">    hexo generate</span><br><span class="line">    hexo deploy</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>您应该现在可以通过访问 <code>https://username.github.io</code> 来查看您的博客了。</p>
+<p>以上就是基础的步骤，您可以根据需要进行进一步的定制和优化，如安装主题、添加插件等。希望这对您有所帮助！</p>
+<h3 id="切换主题"><a href="#切换主题" class="headerlink" title="切换主题"></a>切换主题</h3><p><a href="https://theme-next.js.org/">NexT - Theme for Hexo (theme-next.js.org)</a></p>
+]]></content>
+      <categories>
+        <category>Skills</category>
       </categories>
       <tags>
         <tag>Hexo</tag>
+        <tag>Next</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Youth</title>
+    <url>/2019/09/10/Youth/</url>
+    <content><![CDATA[<p>注：写于大一入学，作为个人档案中的自传提交，因为手写有所涂改被勒令誊写，当然，我没有。</p>
+<h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>jimmy，男，汉族，2001年3月11日凌晨01:00，或是01:02，他看到了这个世界，随后，他哭了。</p>
+<p>jimmy他哭了，这也是合乎情理的。我想任何一个人，在凌晨1点的睡眠中被吵醒，都是想要哭的。但也有另一种说法，是说他提前预知到了今后xx年（这还不好说）里所要经受的苦难，因此他哭了。</p>
+<h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p>在河南省洛阳市涧西区，这个男孩子哭了。可在2001年到2006年这六年里，他是笑的，这是因为他的爷爷和奶奶。jimmy的爷爷是一个喜欢钻研的人，家里的桌子、椅子都是爷爷亲手做的。爷爷的脸上有根胡子尤其的长，那是jimmy总喜欢扯的一根。jimmy的奶奶是一个智慧的人，这对他儿时的教育至关重要。奶奶爱唱歌，有着卷卷的美丽的银白头发。奶奶的爱像太阳，早晨的太阳、午后的太阳、傍晚的太阳。这么说是因为每当jimmy尿床，奶奶一点也不责怪他，还跟他约定明天要是不尿床，就奖励一块钱硬币。只是整整六年，也没攒成多少硬币……</p>
+<p>总而言之，这六年里，在洛阳，在爷爷和奶奶身旁，在夏天的蝉声中，在冬天的炉子旁，在早晨的蜂蜜水中，在晚上街坊口凉爽的风中，在过年时的饺子里，在凉拌芹菜最嫩的芹菜芯中，jimmy是笑的。</p>
+<h2 id="3"><a href="#3" class="headerlink" title="3"></a>3</h2><p>“一个人一生里烙印着三条根，那是从国別、地域、家庭三者文化差异中沉淀出来的。”2007年，jimmy来到了广州市花都区，来到了新华第四小学。广州，可没有炉子啊……背叛了炉子，就斩断了地域和家庭这两条根。直到多年后的今天，jimmy才明自，早在那时就注定，他的一生将处于失根后的无根状态。</p>
+<h2 id="4"><a href="#4" class="headerlink" title="4"></a>4</h2><p>在2007年到2013年这六年里，jimmy认识了一些朋友，一起玩抓人，一起吃辣条。他们总是被老师留堂，是老师眼中调皮捣蛋的坏孩子，可在jimmy眼中可不是。他们留堂，jimmy就等，在教室外靠着墙看天。有时他们出来时天亮着，有时他们出来时天黑了，这都很好，他都很喜欢。jimmy从很小的时候就学会了等待，这并没有多么难……真的。</p>
+<h2 id="5"><a href="#5" class="headerlink" title="5"></a>5</h2><p>后来，在2013年到2016年这三年里，jimmy来到了邝维煜纪念中学。在那里，jimmy谈了第一场恋爱，做出了一道可以加二十分的物理题，一千米从五分钟跑到了三分钟，周杰伦的歌从《可爱女人》听到了《床边故事》……这都不是我要说的，我要说的是一个未来极大地影响jimmy的女孩子，其实那时候就在jimmy身边了，只是他们还不认识……</p>
+<h2 id="6"><a href="#6" class="headerlink" title="6"></a>6</h2><p>再后来，在2016年到2019年这三年里，jimmy穿着青蛙装来到了广州市花都区秀全中学。到学校的那天是凌晨四点半，jimmy背着书包，提着被子，站在了校门口。从校门口到宿舍是一条直路，那条路很宽，旁边的路灯很亮，那时候四周很静，手上提的被子很重。那条路仿佛没有尽头，他本以为可以一直一直走下去。可是三年后，朝着相反的方向，他还是走出来了，带着一根粗壮的、扎进心中的刺，那是最长最长的一根，因而也扎得最深。他不愿将它拔掉，因为它连着的，曾是一朵灿烂绽放的玫瑰，那是世上最美的一朵。</p>
+<h2 id="7"><a href="#7" class="headerlink" title="7"></a>7</h2><p>2019年，jimmy来到了华南农业大学。经过长久的磨合，jimmy变成了贝壳，那刺也变成了珍珠，故事还远没有结束……</p>
+]]></content>
+      <categories>
+        <category>Journals</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Gone old days</title>
+    <url>/2020/09/26/Gone-old-days/</url>
+    <content><![CDATA[<h2 id="一"><a href="#一" class="headerlink" title="一"></a>一</h2><p><strong>那</strong>是一年春晚，一家人围坐在火炉边，我看着老式电视机里一个酷酷的大男孩出了神——他留着长刘海，眯着小眼睛，在台上打拳、翻跟斗，发出「哦耶 嗷嗷嗷 嗷嗷哦耶」的声音。</p>
+<p>大人们都说听不清楚他在唱什么，可我觉得他好酷。</p>
+<p><strong>后来我才知道，他叫周杰伦，那首歌叫「龙拳」，那一年是04年。</strong></p>
+<h2 id="二"><a href="#二" class="headerlink" title="二"></a>二</h2><p><strong>记不清</strong>是四岁还是五岁了，一天，妈妈带回来一根「双节棍」，说是给我的玩具。其实这是个旧玩具，螺纹已经生了锈，棍子上银色的漆也早已这里一块那里一块的掉了，但当时那就是我最最宝贝的东西啦。</p>
+<p>得到了双节棍以后，我去哪儿都要带上它。和爷爷一起买菜时带着，和奶奶一起去公园时带着，上午晒太阳时带着，晚上在街坊口吹风时也带着。</p>
+<p>有时在平地上走路，走着走着我就要停下来，掏出双节棍左一下右一下的乱挥一通，想象自己在少林和武当学了功夫，眼前就有个大坏蛋正在干坏事，我正要路见不平拔刀相助呢！</p>
+<p><strong>每当这时，脑中的背景乐当然是：</strong></p>
+<p>「快使用双节棍 哼哼哈兮</p>
+<p>习武之人切记 仁者无敌</p>
+<p>是谁在练太极 风生水起」</p>
+<p>——《双节棍》  </p>
+<h2 id="三"><a href="#三" class="headerlink" title="三"></a>三</h2><p><strong>小</strong>时候我是在老家和爷爷奶奶一起生活的。</p>
+<p>房子是过去工厂分配的，也算是老房子了。小小的房子里，有一台老式晶体管彩色电视，一台小电冰箱，一台国营长江机器制造厂生产的电风扇，一个冬天用的炉子，一个米缸，一个糖蒜缸，几个黄灯泡，这就是全部数的上来的东西了。</p>
+<p>「泛黄的春联还残留在墙上</p>
+<p>依稀可见几个字 岁岁平安</p>
+<p>在我没回去过的老家米缸</p>
+<p>爷爷用楷书写一个 满 </p>
+<p>  ……</p>
+<p>黄金葛爬满了雕花的门窗</p>
+<p>夕阳斜斜映在斑驳的砖墙</p>
+<p>铺着榉木板的屋内还弥漫</p>
+<p>姥姥当年酿的豆瓣酱」</p>
+<p>——《上海1943》</p>
+<p><strong>就在这间老房子里，在象征着时代记忆的黄灯泡的光下，和爷爷奶奶一起，我度过了我最美好的童年。</strong></p>
+<h2 id="四"><a href="#四" class="headerlink" title="四"></a>四</h2><p><strong>那时</strong>的黄灯泡经常会坏，换灯泡就是爷爷的责任。</p>
+<p>爷爷是一位能工巧匠，家里的桌子、凳子，甚至是我的婴儿车都是爷爷做的。街坊邻居家里什么东西坏了，也总来请爷爷去修。因此街坊们都称呼爷爷一声“师傅”。</p>
+<p>同时，爷爷对中国的历史也很了解，有好多自己的体会，谈起这类话题，往往旁征博引，结合亲身经历，一讲就是好几个小时。别人觉得爷爷啰嗦，但还是个小孩子的我却听得入神。</p>
+<p>「犹记得那年 在一个雨天 </p>
+<p>那七岁的我躲在屋檐 却一直想去荡秋千</p>
+<p>爷爷抽着烟 说唐朝陆羽写茶经三卷 流传了千年」</p>
+<p>——《爷爷泡的茶》</p>
+<p>“这个问题很有来头啊，来来来我给你讲讲……”</p>
+<p>就是在这样的谈话里，我学到了好多好多知识，最为重要的是，学会了独立思考。</p>
+<p><strong>多年以后，我有幸遇见许多思想上的启蒙者，他们或擅长文学，或擅长哲学，或谦和，或雄辩，但早年爷爷对我的影响，却是最为深远的。</strong></p>
+<h2 id="五"><a href="#五" class="headerlink" title="五"></a>五</h2><p><strong>后来</strong>，后来就是初中时代了。</p>
+<p>初中时代男生总会有那么几个喜欢的姑娘。一开始不知道怎么表达喜欢，就学着歌里唱的，拿着铅笔，在纸上一遍遍的写着对方的名字。</p>
+<p>可胆小如我，是连名字也不敢写出来的，那就写拼音首字母，写完还要小心藏起来，不让任何人看到。</p>
+<p>「手中的铅笔</p>
+<p>在纸上来来回回</p>
+<p>我用几行字</p>
+<p>形容你是我的谁」</p>
+<p>——《七里香》</p>
+<p><strong>终究</strong>，终究她还是知道了。</p>
+<p>幸运的，开始小心翼翼的接触，忐忑的示好，认真记下对方每一个小小小小的喜好；不幸的，就互相躲着，在一段时间青涩的感伤后，也就不了了之啦。</p>
+<p>「我将不该犯的错都默背好</p>
+<p>仔细观察她的喜好 Yeah</p>
+<p>而我紧绷的外表 像上紧后的发条</p>
+<p>等她的答案揭晓」</p>
+<p>——《她的睫毛》</p>
+<h2 id="六"><a href="#六" class="headerlink" title="六"></a>六</h2><p><strong>再</strong>往后，再往后就是高中时代了。</p>
+<p>终于啊，不是「开不了口」，不是「不能说的秘密」，而是可以向那个「可爱女人」大声宣布的「简单爱」啦。</p>
+<p>「我想大声宣布 对你依依不舍</p>
+<p>  ……</p>
+<p>我想带你回我的外婆家一起</p>
+<p>看着日落 一直到我们都睡着</p>
+<p>  ……</p>
+<p>你靠着我的肩膀 你在我胸口睡着</p>
+<p>像这样的生活我爱你你爱我」</p>
+<p>——《简单爱》</p>
+<p><strong>好多个夜晚，我们手牵着手漫步，仿佛走在池塘的水底，从一个月亮走向另一个月亮。</strong></p>
+<p>「手牵手 一步两步三步四步望着天</p>
+<p>看星星 一颗两颗三颗四颗连成线」</p>
+<p>——《星晴》</p>
+<h2 id="七"><a href="#七" class="headerlink" title="七"></a>七</h2><p><strong>谈</strong>恋爱的每个星期，我都盼望着周末。</p>
+<p>一旦出了学校，甚至不用出学校，无人的课室就是我们的天堂了！</p>
+<p>「你优雅的像一只猫 动作轻盈的围绕</p>
+<p>爱的甜味蔓延发酵 暧昧来得刚好」</p>
+<p>——《迷迭香》</p>
+<p>谁愿意被注视着，忍受人世的鞭挞和讥嘲，压迫者的凌辱，傲慢者的冷眼，被轻蔑的爱情的惨痛，存天理灭人欲的人为法的迁延，体现恶的平庸性的官吏的横暴。要是只要安静的等待周末的到来，这一切就可以结束？</p>
+<p><strong>如果不是周末必将到来，没有人愿意负着这样的重担，忍受人世的摧残。</strong></p>
+<h2 id="八"><a href="#八" class="headerlink" title="八"></a>八</h2><p><strong>而</strong>「相爱还有别离，像无法被安排的雨，随时准备来袭」……</p>
+<p>「消失的下雨天 我好想再淋一遍</p>
+<p>没想到失去的勇气</p>
+<p>我还留着</p>
+<p>好想再问一遍</p>
+<p>你会等待还是离开」</p>
+<p>——《晴天》</p>
+<h2 id="九"><a href="#九" class="headerlink" title="九"></a>九</h2><p><strong>与</strong>周杰伦音乐的邂逅当然远不止这些。</p>
+<p>当我读《福尔摩斯探案集》时，耳边是「贝克街旁的圆形广场」。</p>
+<p>当我读古龙的武侠小说时，耳边是「一壶好酒再来一碗热粥配上几斤的牛肉 我说店小二三两银够不够」。</p>
+<p>当我读古希腊哲学时，耳边是「我坐在客厅模仿雕像思考，却仿佛听到同样想法的困扰」。</p>
+<p><strong>就这样，周杰伦的音乐充满了我的青春成长。</strong></p>
+<h2 id="十"><a href="#十" class="headerlink" title="十"></a>十</h2><p><strong>前</strong>不久，一个朋友跟我说：“不知道为什么，我现在听到周杰伦的音乐会主动切掉它。”</p>
+<p>我说我也是。</p>
+<p>可能是承载了太多的回忆吧，我背不动它啦。</p>
+<p><strong>就留在深层的记忆里吧，这消失的旧时光啊！</strong></p>
+]]></content>
+      <categories>
+        <category>Journals</category>
+      </categories>
   </entry>
 </search>

@@ -6,7 +6,7 @@
   <link href="https://daaasein.github.io/atom.xml" rel="self"/>
   
   <link href="https://daaasein.github.io/"/>
-  <updated>2023-10-03T15:32:46.250Z</updated>
+  <updated>2023-10-04T15:37:31.119Z</updated>
   <id>https://daaasein.github.io/</id>
   
   <author>
@@ -17,26 +17,74 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://daaasein.github.io/2023/10/03/hello-world/"/>
-    <id>https://daaasein.github.io/2023/10/03/hello-world/</id>
-    <published>2023-10-03T13:48:01.555Z</published>
-    <updated>2023-10-03T15:32:46.250Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <title>Boy or Man, that is the question...</title>
+    <link href="https://daaasein.github.io/2023/10/04/Boy-or-Man-that-is-the-question/"/>
+    <id>https://daaasein.github.io/2023/10/04/Boy-or-Man-that-is-the-question/</id>
+    <published>2023-10-04T15:30:24.000Z</published>
+    <updated>2023-10-04T15:37:31.119Z</updated>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
+    <summary type="html">男孩还是男人，这是一个问题。</summary>
     
     
     
-    <category term="Guide" scheme="https://daaasein.github.io/categories/Guide/"/>
+    <category term="Journals" scheme="https://daaasein.github.io/categories/Journals/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Create a blog</title>
+    <link href="https://daaasein.github.io/2023/10/04/Create-a-blog/"/>
+    <id>https://daaasein.github.io/2023/10/04/Create-a-blog/</id>
+    <published>2023-10-04T13:47:10.000Z</published>
+    <updated>2023-10-04T15:33:55.546Z</updated>
+    
+    
+    <summary type="html">这里是一个使用 Hexo 和 GitHub Pages 搭建个人博客的基础步骤指南。</summary>
+    
+    
+    
+    <category term="Skills" scheme="https://daaasein.github.io/categories/Skills/"/>
     
     
     <category term="Hexo" scheme="https://daaasein.github.io/tags/Hexo/"/>
+    
+    <category term="Next" scheme="https://daaasein.github.io/tags/Next/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Gone old days</title>
+    <link href="https://daaasein.github.io/2020/09/26/Gone-old-days/"/>
+    <id>https://daaasein.github.io/2020/09/26/Gone-old-days/</id>
+    <published>2020-09-26T15:45:42.000Z</published>
+    <updated>2023-10-04T15:57:30.069Z</updated>
+    
+    
+    <summary type="html">轻飘飘的旧时光就这么溜走，转头回去看看时已匆匆数年。</summary>
+    
+    
+    
+    <category term="Journals" scheme="https://daaasein.github.io/categories/Journals/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Youth</title>
+    <link href="https://daaasein.github.io/2019/09/10/Youth/"/>
+    <id>https://daaasein.github.io/2019/09/10/Youth/</id>
+    <published>2019-09-10T15:45:42.000Z</published>
+    <updated>2023-10-04T15:53:19.152Z</updated>
+    
+    
+    <summary type="html">The sands of time...</summary>
+    
+    
+    
+    <category term="Journals" scheme="https://daaasein.github.io/categories/Journals/"/>
+    
     
   </entry>
   
