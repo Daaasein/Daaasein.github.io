@@ -55,6 +55,125 @@
   </entry>
   
   <entry>
+    <title>Dialogue with ChatGPT</title>
+    <link href="https://daaasein.github.io/2023/10/03/Dialogue-with-ChatGPT/"/>
+    <id>https://daaasein.github.io/2023/10/03/Dialogue-with-ChatGPT/</id>
+    <published>2023-10-02T16:15:28.000Z</published>
+    <updated>2023-10-04T16:25:31.730Z</updated>
+    
+    
+    <summary type="html">回答延伸的问题，承认错误，挑战错误的前提，拒绝不妥的要求。如果人人都这样该多好。</summary>
+    
+    
+    
+    <category term="Journals" scheme="https://daaasein.github.io/categories/Journals/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Chocolatey</title>
+    <link href="https://daaasein.github.io/2023/10/02/Chocolatey/"/>
+    <id>https://daaasein.github.io/2023/10/02/Chocolatey/</id>
+    <published>2023-10-01T16:37:59.000Z</published>
+    <updated>2023-10-04T16:40:28.858Z</updated>
+    
+    
+    <summary type="html">Chocolatey是适用于Windows的包管理工具，类似Mac下的Homebrew，Linux下的APT等。</summary>
+    
+    
+    
+    <category term="Skills" scheme="https://daaasein.github.io/categories/Skills/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Git</title>
+    <link href="https://daaasein.github.io/2023/09/30/Git/"/>
+    <id>https://daaasein.github.io/2023/09/30/Git/</id>
+    <published>2023-09-29T16:37:25.000Z</published>
+    <updated>2023-10-04T16:43:23.826Z</updated>
+    
+    
+    <summary type="html">展示Git的基本操作步骤，以及如何连接Github等远程仓库。</summary>
+    
+    
+    
+    <category term="Skills" scheme="https://daaasein.github.io/categories/Skills/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Zsh</title>
+    <link href="https://daaasein.github.io/2023/09/30/Zsh/"/>
+    <id>https://daaasein.github.io/2023/09/30/Zsh/</id>
+    <published>2023-09-29T16:37:19.000Z</published>
+    <updated>2023-10-04T16:58:04.513Z</updated>
+    
+    
+    <summary type="html">展示Zsh设置代理、清除代理缓存、检查当前代理的方式。</summary>
+    
+    
+    
+    <category term="Skills" scheme="https://daaasein.github.io/categories/Skills/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Setup a new Windows</title>
+    <link href="https://daaasein.github.io/2023/09/30/Setup-a-new-Windows/"/>
+    <id>https://daaasein.github.io/2023/09/30/Setup-a-new-Windows/</id>
+    <published>2023-09-29T16:31:52.000Z</published>
+    <updated>2023-10-04T16:36:42.859Z</updated>
+    
+    
+    <summary type="html">本文展示了设置PowerShell代理，安装WSL2并设置Zsh为默认shell，以及APT的基本使用。这些可以作为新手设置一台新Windows的基本操作流程。</summary>
+    
+    
+    
+    <category term="Skills" scheme="https://daaasein.github.io/categories/Skills/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Setup a new Mac</title>
+    <link href="https://daaasein.github.io/2023/09/30/Setup-a-new-Mac/"/>
+    <id>https://daaasein.github.io/2023/09/30/Setup-a-new-Mac/</id>
+    <published>2023-09-29T16:25:45.000Z</published>
+    <updated>2023-10-04T16:31:10.285Z</updated>
+    
+    
+    <summary type="html">本文展示了结合Homebrew,iCloud,Github等工具，设置一台新Mac的基本操作流程。</summary>
+    
+    
+    
+    <category term="Skills" scheme="https://daaasein.github.io/categories/Skills/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Docker</title>
+    <link href="https://daaasein.github.io/2023/09/29/Docker/"/>
+    <id>https://daaasein.github.io/2023/09/29/Docker/</id>
+    <published>2023-09-28T16:37:44.000Z</published>
+    <updated>2023-10-04T16:41:44.397Z</updated>
+    
+    
+    <summary type="html">Docker 是一个开源的应用容器引擎，用于容器化应用并自动化部署。</summary>
+    
+    
+    
+    <category term="Skills" scheme="https://daaasein.github.io/categories/Skills/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Gone old days</title>
     <link href="https://daaasein.github.io/2020/09/26/Gone-old-days/"/>
     <id>https://daaasein.github.io/2020/09/26/Gone-old-days/</id>
