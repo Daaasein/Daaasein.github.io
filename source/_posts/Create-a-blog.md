@@ -24,20 +24,18 @@ description: "这里是一个使用 Hexo 和 GitHub Pages 搭建个人博客的�
     ```bash
     npm install -g hexo-cli
     ```
-    ```-g```: global
-    
-    
+    `-g`: global
+
+
 ## 初始化您的 Hexo 项目
 
 4. **创建并初始化新项目**: 在命令行中，转到您希望创建项目的目录，然后运行：
-    
+   
     ```bash
     hexo init my-blog
     cd my-blog
     npm install # 它会查找一个名为 `package.json` 的文件。这个文件列出了项目所需的所有 NPM 包（依赖）。然后，NPM 会下载并安装这些依赖到 `my-blog` 目录下的 `node_modules` 子目录。
     ```
-
-
 
 ## 本地预览
 
@@ -46,13 +44,9 @@ description: "这里是一个使用 Hexo 和 GitHub Pages 搭建个人博客的�
     hexo server
     ```
 
-
-
 ## 配置 Hexo
 
 6. **编辑配置文件**: 在 `my-blog` 目录中，您会找到一个 `_config.yml` 文件。使用任意文本编辑器打开它并进行相关设置，例如您的博客标题、描述等。
-
-
 
 ## 创建您的第一篇文章
 
@@ -62,8 +56,6 @@ description: "这里是一个使用 Hexo 和 GitHub Pages 搭建个人博客的�
     ```
 
 8. **编辑文章**: 打开 `source/_posts/My-First-Post.md` 文件，然后开始编写您的第一篇文章。您可以使用 Markdown 语法。
-
-
 
 ## 部署到 GitHub Pages
 
@@ -78,10 +70,12 @@ description: "这里是一个使用 Hexo 和 GitHub Pages 搭建个人博客的�
     ```
 
 11. **安装部署插件**: 在 `my-blog` 目录下运行以下命令以安装 Hexo 的 Git 部署插件：
+    
     ```bash
     npm install hexo-deployer-git --save
     ```
-    ```--save```: 将依赖项记录在`package.json`中，利于其他开发者克隆项目并运行`npm install`时，NPM会查看`package.json`文件，并自动安装所有列出的依赖项，无需手动一个一个安装。注意：从NPM 5.0.0版本开始，`--save`是默认行为。
+    `--save`: 将依赖项记录在`package.json`中，利于其他开发者克隆项目并运行`npm install`时，NPM会查看`package.json`文件，并自动安装所有列出的依赖项，无需手动一个一个安装。注意：从NPM 5.0.0版本开始，`--save`是默认行为。
+    
 12. **部署网站**: 在 `my-blog` 目录下运行以下命令以将网站部署到 GitHub Pages：
     ```bash
     hexo clean
@@ -93,13 +87,9 @@ description: "这里是一个使用 Hexo 和 GitHub Pages 搭建个人博客的�
 
 以上就是基础的步骤，您可以根据需要进行进一步的定制和优化，如安装主题、添加插件等。希望这对您有所帮助！
 
-
-
 ## 切换主题
 
 [NexT - Theme for Hexo (theme-next.js.org)](https://theme-next.js.org/)
-
-
 
 ## 在任意设备修改Blog
 基本思路：原有仓库的分支仅存储生成后的网页文件（public文件夹内的文件），若想在任意设备均可修改Blog，就需要Github托管所有源文件。为减少麻烦，不必创建一个新仓库，只需在原有仓库内新建一个branch存储所有源文件。甚至可以更进一步，当新branch有变更时，使用Github Action自动化部署。
@@ -115,10 +105,10 @@ description: "这里是一个使用 Hexo 和 GitHub Pages 搭建个人博客的�
 	```bash
 	git checkout -b development
 	```
-	```-b```: branch
+	`-b`: branch
 #### 步骤 2：存储完整的Hexo项目文件
 
-1. 删除```main```分支clone的本地文件（不要删除```.git```），存储希望push到新分支的所有文件。
+1. 删除`main`分支clone的本地文件（不要删除```.git```），存储希望push到新分支的所有文件。
 2. 提交这些更改并推送到GitHub的`development`分支。
 	```bash
 	git add . 

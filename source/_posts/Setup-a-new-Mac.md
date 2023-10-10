@@ -185,8 +185,8 @@ Once you've authenticated successfully, your credentials are stored in the macOS
 	# -M：选项意味着如果 "main" 分支已经存在，那么将会强制执行该操作
 	# 由于历史原因，仓库主分支命名可能为master或main，这可能导致冲突，因此需要统一。
 	```
-	3. **将本地的 "main" 分支推送到远程仓库 "origin"**：在这里，就是前面添加的 GitHub 仓库。
-    ```bash
+	3. **将本地的 main 分支推送到远程仓库 origin**：在这里，就是前面添加的 GitHub 仓库。
+	 ```bash
 	git push -u origin main
 	# -u：选项用于设置本地 "main" 分支和远程 "origin/main" 分支之间的上游跟踪关系，这样在未来执行 `git pull` 或 `git push` 时，不需要指定远程仓库和分支。
 	 ```
