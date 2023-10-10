@@ -38,7 +38,7 @@
     <link href="https://daaasein.github.io/2023/10/04/Create-a-blog/"/>
     <id>https://daaasein.github.io/2023/10/04/Create-a-blog/</id>
     <published>2023-10-04T13:47:10.000Z</published>
-    <updated>2023-10-10T09:25:29.015Z</updated>
+    <updated>2023-10-10T09:43:07.261Z</updated>
     
     
     <summary type="html">这里是一个使用 Hexo 和 GitHub Pages 搭建个人博客的基础步骤指南。</summary>
@@ -93,7 +93,7 @@
     <link href="https://daaasein.github.io/2023/09/30/Git/"/>
     <id>https://daaasein.github.io/2023/09/30/Git/</id>
     <published>2023-09-29T16:37:25.000Z</published>
-    <updated>2023-10-10T09:25:29.016Z</updated>
+    <updated>2023-10-10T09:45:18.099Z</updated>
     
     
     <summary type="html">展示Git的基本操作步骤，以及如何连接Github等远程仓库。</summary>
@@ -110,7 +110,7 @@
     <link href="https://daaasein.github.io/2023/09/30/Zsh/"/>
     <id>https://daaasein.github.io/2023/09/30/Zsh/</id>
     <published>2023-09-29T16:37:19.000Z</published>
-    <updated>2023-10-10T09:25:29.017Z</updated>
+    <updated>2023-10-10T09:46:26.180Z</updated>
     
     
     <summary type="html">展示Zsh设置代理、清除代理缓存、检查当前代理的方式。</summary>
@@ -127,7 +127,7 @@
     <link href="https://daaasein.github.io/2023/09/30/Setup-a-new-Windows/"/>
     <id>https://daaasein.github.io/2023/09/30/Setup-a-new-Windows/</id>
     <published>2023-09-29T16:31:52.000Z</published>
-    <updated>2023-10-10T09:25:29.016Z</updated>
+    <updated>2023-10-10T09:39:31.087Z</updated>
     
     
     <summary type="html">本文展示了设置PowerShell代理，安装WSL2并设置Zsh为默认shell，以及APT的基本使用。这些可以作为新手设置一台新Windows的基本操作流程。</summary>
@@ -144,7 +144,7 @@
     <link href="https://daaasein.github.io/2023/09/30/Setup-a-new-Mac/"/>
     <id>https://daaasein.github.io/2023/09/30/Setup-a-new-Mac/</id>
     <published>2023-09-29T16:25:45.000Z</published>
-    <updated>2023-10-10T09:25:29.016Z</updated>
+    <updated>2023-10-10T09:38:26.867Z</updated>
     
     
     <summary type="html">本文展示了结合Homebrew,iCloud,Github等工具，设置一台新Mac的基本操作流程。</summary>

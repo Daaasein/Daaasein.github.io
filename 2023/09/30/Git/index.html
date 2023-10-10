@@ -30,7 +30,7 @@
 <meta property="og:description" content="展示Git的基本操作步骤，以及如何连接Github等远程仓库。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-09-29T16:37:25.000Z">
-<meta property="article:modified_time" content="2023-10-10T09:25:29.016Z">
+<meta property="article:modified_time" content="2023-10-10T09:45:18.099Z">
 <meta property="article:author" content="jimmy">
 <meta property="article:tag" content="programming, technology, journal">
 <meta name="twitter:card" content="summary">
@@ -219,7 +219,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-10-10 17:25:29" itemprop="dateModified" datetime="2023-10-10T17:25:29+08:00">2023-10-10</time>
+                <time title="Modified: 2023-10-10 17:45:18" itemprop="dateModified" datetime="2023-10-10T17:45:18+08:00">2023-10-10</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -237,14 +237,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>4k</span>
+              <span>7.8k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>4 mins.</span>
+              <span>7 mins.</span>
             </span>
             <div class="post-description">展示Git的基本操作步骤，以及如何连接Github等远程仓库。</div>
 
@@ -258,6 +258,18 @@
 
       
         <h1 id="远程仓库身份验证"><a href="#远程仓库身份验证" class="headerlink" title="远程仓库身份验证"></a>远程仓库身份验证</h1><p>Git连接远程仓库需要身份验证，直接使用Github账户和密码验证的方式已被弃用，目前官方指南有两种方式：<code>GitHub CLI</code> 或 <code>Git 凭据管理器（GCM）</code>。</p>
+<h2 id="GCM（推荐）"><a href="#GCM（推荐）" class="headerlink" title="GCM（推荐）"></a>GCM（推荐）</h2><p>Git 凭据管理器 （GCM） 是另一种安全存储凭据并通过 HTTPS 连接到 GitHub 的方法。使用 GCM，您无需手动创建和存储个人访问令牌，因为 GCM 代表您管理身份验证，包括 2FA（双因素身份验证）。</p>
+<ol>
+<li><p>Install Git using <a target="_blank" rel="noopener" href="https://brew.sh/">Homebrew</a>:<br> 使用 Homebrew 安装 Git：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install git</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Install GCM using Homebrew:<br> 使用Homebrew安装 GCM：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install --cask git-credential-manager</span><br></pre></td></tr></table></figure>
+<p> For MacOS, you don’t need to run <code>git config</code> because GCM automatically configures Git for you.<br> 对于 MacOS，您无需运行 <code>git config</code> ，因为 GCM 会自动为您配置 Git。</p>
+</li>
+</ol>
+<p>The next time you clone an HTTPS URL that requires authentication, Git will prompt you to log in using a browser window. You may first be asked to authorize an OAuth app. If your account or organization requires <a target="_blank" rel="noopener" href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa">two-factor auth</a>, you’ll also need to complete the 2FA challenge.<br>下次克隆需要身份验证的 HTTPS URL 时，Git 将提示您使用浏览器窗口登录。系统可能会首先要求您授权 OAuth 应用程序。如果您的帐户或组织需要双重身份验证，您还需要完成 2FA 挑战。</p>
+<p>Once you’ve authenticated successfully, your credentials are stored in the macOS keychain and will be used every time you clone an HTTPS URL. Git will not require you to type your credentials in the command line again unless you change your credentials.<br>成功进行身份验证后，您的凭据将存储在 macOS 钥匙串中，并在每次克隆 HTTPS URL 时使用。Git 不会要求您再次在命令行中键入凭据，除非您更改凭据。</p>
 <h2 id="Github-CLI"><a href="#Github-CLI" class="headerlink" title="Github CLI"></a>Github CLI</h2><p>当您选择 <code>HTTPS</code> 作为 Git 操作的首选协议时，GitHub CLI 将自动为您存储 Git 凭据，并对询问您是否要使用 GitHub 凭据向 Git 进行身份验证的提示回答“是”。</p>
 <ol>
 <li><p><a target="_blank" rel="noopener" href="https://github.com/cli/cli#installation">Install</a> GitHub CLI on macOS, Windows, or Linux.<br> 在 macOS、Windows 或 Linux 上安装 GitHub CLI。</p>
@@ -269,19 +281,7 @@
 </ul>
 </li>
 </ol>
-<h2 id="GCM（推荐）"><a href="#GCM（推荐）" class="headerlink" title="GCM（推荐）"></a>GCM（推荐）</h2><p>Git 凭据管理器 （GCM） 是另一种安全存储凭据并通过 HTTPS 连接到 GitHub 的方法。使用 GCM，您无需手动创建和存储个人访问令牌，因为 GCM 代表您管理身份验证，包括 2FA（双因素身份验证）。</p>
-<ol>
-<li><p>Install Git using <a target="_blank" rel="noopener" href="https://brew.sh/">Homebrew</a>:<br> 使用 Homebrew 安装 Git：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install git</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Install GCM using Homebrew:<br> 使用自制软件安装 GCM：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install --cask git-credential-manager</span><br></pre></td></tr></table></figure>
-<p> For MacOS, you don’t need to run <code>git config</code> because GCM automatically configures Git for you.<br> 对于 MacOS，您无需运行 <code>git config</code> ，因为 GCM 会自动为您配置 Git。</p>
-</li>
-</ol>
-<p>The next time you clone an HTTPS URL that requires authentication, Git will prompt you to log in using a browser window. You may first be asked to authorize an OAuth app. If your account or organization requires <a target="_blank" rel="noopener" href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa">two-factor auth</a>, you’ll also need to complete the 2FA challenge.<br>下次克隆需要身份验证的 HTTPS URL 时，Git 将提示您使用浏览器窗口登录。系统可能会首先要求您授权 OAuth 应用程序。如果您的帐户或组织需要双重身份验证，您还需要完成 2FA 挑战。</p>
-<p>Once you’ve authenticated successfully, your credentials are stored in the macOS keychain and will be used every time you clone an HTTPS URL. Git will not require you to type your credentials in the command line again unless you change your credentials.<br>成功进行身份验证后，您的凭据将存储在 macOS 钥匙串中，并在每次克隆 HTTPS URL 时使用。Git 不会要求您再次在命令行中键入凭据，除非您更改凭据。</p>
-<h1 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h1><ol>
+<h1 id="Init"><a href="#Init" class="headerlink" title="Init"></a>Init</h1><ol>
 <li>改变当前目录为iCloud的Documents目录。 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/Documents</span><br></pre></td></tr></table></figure></li>
 <li>您可以使用 <code>git</code> 创建一个仓库来保存它们。 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init      <span class="comment"># 在当前目录创建仓库</span></span><br><span class="line">git status    <span class="comment"># 查看文件状态，应该会显示所有文件都没有被添加</span></span><br><span class="line">git add --all <span class="comment"># 添加所有文件（包含已删除文件）到暂存区</span></span><br><span class="line">git commit -m <span class="string">&quot;Save zsh config, Homebrew config and Obsidian files&quot;</span></span><br><span class="line">              <span class="comment"># 提交与提示信息</span></span><br></pre></td></tr></table></figure></li>
 </ol>
@@ -324,7 +324,7 @@
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin [your-branch-name]</span><br></pre></td></tr></table></figure></li>
 </ol>
 <p>现在，<code>.obsidian</code>文件夹应该已经从你的远程GitHub仓库中被移除，而你本地的<code>.obsidian</code>文件夹应该依然存在并保持不变。从这一点开始，由于<code>.gitignore</code>文件的存在，<code>.obsidian</code>文件夹将不会被再次上传。</p>
-<h1 id="连接远程仓库"><a href="#连接远程仓库" class="headerlink" title="连接远程仓库"></a>连接远程仓库</h1><ol>
+<h1 id="Remote"><a href="#Remote" class="headerlink" title="Remote"></a>Remote</h1><ol>
 <li><p><strong>创建一个远程 Git 仓库：</strong> 您可以在 GitHub、GitLab 或其他平台上创建一个新的远程仓库。</p>
 </li>
 <li><p><strong>推送本地仓库到远程：</strong> 这样，即使您的本地机器和iCloud同时出现问题，您的文件也不会丢失。</p>
@@ -335,11 +335,11 @@
 </ol>
 </li>
 </ol>
-<h1 id="克隆仓库"><a href="#克隆仓库" class="headerlink" title="克隆仓库"></a>克隆仓库</h1><ol>
+<h1 id="Clone"><a href="#Clone" class="headerlink" title="Clone"></a>Clone</h1><ol>
 <li><p><strong>克隆远程仓库：</strong> 克隆您之前创建的远程仓库。</p>
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> &lt;your-remote-repository-url&gt;</span><br></pre></td></tr></table></figure></li>
 </ol>
-<h1 id="与远程仓库保持同步"><a href="#与远程仓库保持同步" class="headerlink" title="与远程仓库保持同步"></a>与远程仓库保持同步</h1><p>在Git中，从远程仓库更新本地文件通常可以通过以下几个步骤来实现：</p>
+<h1 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h1><h2 id="update-repository"><a href="#update-repository" class="headerlink" title="update repository"></a>update repository</h2><p>在Git中，从远程仓库更新本地文件通常可以通过以下几个步骤来实现：</p>
 <ol>
 <li><p><strong>确定当前状态</strong>: 首先，使用<code>git status</code>命令来检查本地工作目录和暂存区的状态。这将告诉您是否有未提交的更改。</p>
 </li>
@@ -362,6 +362,65 @@
 <ul>
 <li><strong>分支</strong>: 确保您在正确的分支上执行这些操作。如果需要，您可以使用<code>git checkout &lt;branch_name&gt;</code>切换到正确的分支。</li>
 </ul>
+<h2 id="update-submodule"><a href="#update-submodule" class="headerlink" title="update submodule"></a>update submodule</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git submodule update --init --recursive</span><br></pre></td></tr></table></figure>
+
+<h1 id="Branch"><a href="#Branch" class="headerlink" title="Branch"></a>Branch</h1><h2 id="步骤-1：创建并切换到新的分支"><a href="#步骤-1：创建并切换到新的分支" class="headerlink" title="步骤 1：创建并切换到新的分支"></a>步骤 1：创建并切换到新的分支</h2><ol>
+<li>克隆您现有的GitHub仓库（这里假设您已有一个托管在<code>main</code>分支的仓库）。 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/your_username/your_repository.git</span><br></pre></td></tr></table></figure></li>
+<li>创建一个新的分支，比如命名为<code>development</code>。 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout development</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="步骤-2：存储完整的Hexo项目文件"><a href="#步骤-2：存储完整的Hexo项目文件" class="headerlink" title="步骤 2：存储完整的Hexo项目文件"></a>步骤 2：存储完整的Hexo项目文件</h2><ol>
+<li>删除<code>main</code>分支clone的本地文件（不要删除<code>.git</code>），存储希望push到新分支的所有文件。</li>
+<li>提交这些更改并推送到GitHub的<code>development</code>分支。 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add . </span><br><span class="line">git commit -m <span class="string">&quot;Store complete Hexo project&quot;</span> </span><br><span class="line">git push origin development</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="CI-CD"><a href="#CI-CD" class="headerlink" title="CI&#x2F;CD"></a>CI&#x2F;CD</h1><p>CI&#x2F;CD代表持续集成（Continuous Integration）和持续部署（Continuous Deployment）。</p>
+<ul>
+<li><strong>持续集成（CI）</strong>: 是开发团队经常（通常是每天）将代码更改集成到共享仓库中的实践。之后会自动运行各种测试和其他检查工具。</li>
+<li><strong>持续部署（CD）</strong>: 是一个自动将代码更改从共享仓库部署到生产环境的过程。</li>
+</ul>
+<p>这些工具（如GitHub Actions, Jenkins等）能自动生成静态页面，因为您可以编写脚本或配置文件来自动执行一系列命令。这些命令可以包括安装依赖项、运行测试、构建项目（如使用<code>hexo generate</code>生成静态页面）以及将构建结果推送到指定的服务器或分支。这些步骤是自动化的，通常会在您提交代码或合并分支之后立即执行。</p>
+<p>使用CI&#x2F;CD工具，您可以确保代码更改是有效的，并且它们能快速、可靠地被部署到生产环境，减少了人工操作带来的风险和延迟。</p>
+<h2 id="CI-CD原理和安全性"><a href="#CI-CD原理和安全性" class="headerlink" title="CI&#x2F;CD原理和安全性"></a>CI&#x2F;CD原理和安全性</h2><h4 id="原理："><a href="#原理：" class="headerlink" title="原理："></a>原理：</h4><p>CI&#x2F;CD 工具通常运行在一个预配置的环境（通常称为 “Runner” 或 “Agent”）中，这个环境具备执行构建、测试和部署任务所需的所有依赖和权限。当触发某个事件（如代码推送或合并请求）时，这些工具会按照您在配置文件中定义的步骤执行一系列命令。</p>
+<h4 id="运行环境："><a href="#运行环境：" class="headerlink" title="运行环境："></a>运行环境：</h4><p>这些 Runner 或 Agent 可能运行在各种环境中，从完全托管的云实例到您自己的硬件。在 GitHub Actions 的情况下，它们通常运行在 GitHub 托管的虚拟环境（如 <code>ubuntu-latest</code> 或 <code>windows-latest</code>）中。</p>
+<h4 id="安全性："><a href="#安全性：" class="headerlink" title="安全性："></a>安全性：</h4><p>作为服务提供方，GitHub 采取了多种措施以保证 CI&#x2F;CD 环境的安全：</p>
+<ol>
+<li>隔离：每个工作流程在其自己的环境中运行，与其他工作流程相隔离。</li>
+<li>限制权限：默认情况下，Runner 的权限被严格限制。</li>
+<li>审计和监控：所有 CI&#x2F;CD 操作都可以被审计和监控。</li>
+<li>密码和密钥管理：使用诸如 <code>secrets</code> 的机制，安全地管理敏感信息。</li>
+</ol>
+<h2 id="配置CI-CD"><a href="#配置CI-CD" class="headerlink" title="配置CI&#x2F;CD"></a>配置CI&#x2F;CD</h2><p>使用GitHub Actions或其他CI&#x2F;CD工具，自动从<code>development</code>分支生成静态页面，并推送到<code>main</code>分支。这通常通过YAML文件来配置，该文件位于仓库的<code>.github/workflows</code>目录中。</p>
+<p>以下是一个简单的GitHub Actions YAML文件示例，用于从<code>development</code>分支生成Hexo静态页面并推送到<code>main</code>分支。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">Deploy</span> <span class="string">Hexo</span></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line">  <span class="attr">push:</span></span><br><span class="line">    <span class="attr">branches:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">development</span></span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">build-deploy:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Checkout</span> <span class="string">development</span> <span class="string">branch</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/checkout@v2</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">ref:</span> <span class="string">development</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Set</span> <span class="string">up</span> <span class="string">Node.js</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/setup-node@v2</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">node-version:</span> <span class="string">&#x27;14&#x27;</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Cache</span> <span class="string">dependencies</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/cache@v2</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">path:</span> <span class="string">~/.npm</span></span><br><span class="line">          <span class="attr">key:</span> <span class="string">$&#123;&#123;</span> <span class="string">runner.os</span> <span class="string">&#125;&#125;-node-$&#123;&#123;</span> <span class="string">hashFiles(&#x27;**/package-lock.json&#x27;)</span> <span class="string">&#125;&#125;</span></span><br><span class="line">          <span class="attr">restore-keys:</span> <span class="string">$&#123;&#123;</span> <span class="string">runner.os</span> <span class="string">&#125;&#125;-node-</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Install</span> <span class="string">Dependencies</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">npm</span> <span class="string">install</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Generate</span> <span class="string">site</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">npx</span> <span class="string">hexo</span> <span class="string">generate</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Deploy</span> <span class="string">to</span> <span class="string">main</span> <span class="string">branch</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">peaceiris/actions-gh-pages@v3</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">github_token:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.GITHUB_TOKEN</span> <span class="string">&#125;&#125;</span></span><br><span class="line">          <span class="attr">publish_dir:</span> <span class="string">./public</span></span><br><span class="line">          <span class="attr">publish_branch:</span> <span class="string">main</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这样，每次您在<code>development</code>分支做出更改并推送到GitHub后，CI&#x2F;CD工具都会自动构建您的网站并将其部署到<code>main</code>分支。具体每个部分的解释如下：<br>当然，我会详细解释我之前提供的 GitHub Actions YAML 文件。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">Deploy</span> <span class="string">Hexo</span></span><br></pre></td></tr></table></figure>
+<p>这一行定义了该 GitHub Actions 工作流的名字，名为 “Deploy Hexo”。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">on:</span></span><br><span class="line">  <span class="attr">push:</span></span><br><span class="line">    <span class="attr">branches:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">development</span></span><br></pre></td></tr></table></figure>
+<p>这一部分定义了触发此工作流程的条件。在这里，任何推送（<code>push</code>）到<code>development</code>分支的操作都会触发这个工作流程。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">build-deploy:</span></span><br></pre></td></tr></table></figure>
+<p>在这里，<code>jobs</code>字段定义了一个或多个作业（job），每个作业都包含一系列的步骤（steps）。在这个例子中，有一个名为<code>build-deploy</code>的作业。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br></pre></td></tr></table></figure>
+<p>这一行定义了作业运行的环境，使用的是最新版本的 Ubuntu。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">steps:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Checkout</span> <span class="string">development</span> <span class="string">branch</span></span><br></pre></td></tr></table></figure>
+<p>以下是作业的步骤。第一个步骤名为“Checkout development branch”。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">uses:</span> <span class="string">actions/checkout@v2</span></span><br><span class="line"><span class="attr">with:</span></span><br><span class="line">  <span class="attr">ref:</span> <span class="string">development</span></span><br></pre></td></tr></table></figure>
+<p>该步骤使用一个名为 <code>actions/checkout@v2</code> 的预建动作，用于检出代码。这里特定检出了<code>development</code>分支。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Set</span> <span class="string">up</span> <span class="string">Node.js</span></span><br><span class="line">  <span class="attr">uses:</span> <span class="string">actions/setup-node@v2</span></span><br><span class="line">  <span class="attr">with:</span></span><br><span class="line">    <span class="attr">node-version:</span> <span class="string">&#x27;14&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>这个步骤用于设置 Node.js 环境。它使用了 <code>actions/setup-node@v2</code> 动作，并指定使用版本为 ‘14’ 的 Node.js。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Cache</span> <span class="string">dependencies</span></span><br><span class="line">  <span class="attr">uses:</span> <span class="string">actions/cache@v2</span></span><br><span class="line">  <span class="attr">with:</span></span><br><span class="line">    <span class="attr">path:</span> <span class="string">~/.npm</span></span><br><span class="line">    <span class="attr">key:</span> <span class="string">$&#123;&#123;</span> <span class="string">runner.os</span> <span class="string">&#125;&#125;-node-$&#123;&#123;</span> <span class="string">hashFiles(&#x27;**/package-lock.json&#x27;)</span> <span class="string">&#125;&#125;</span></span><br><span class="line">    <span class="attr">restore-keys:</span> <span class="string">$&#123;&#123;</span> <span class="string">runner.os</span> <span class="string">&#125;&#125;-node-</span></span><br></pre></td></tr></table></figure>
+<p>这个步骤用于缓存依赖项，以加速后续运行。这里缓存了 Node.js 的依赖项。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Install</span> <span class="string">Dependencies</span></span><br><span class="line">  <span class="attr">run:</span> <span class="string">npm</span> <span class="string">install</span></span><br></pre></td></tr></table></figure>
+<p>此步骤用于安装项目依赖项，使用了 <code>npm install</code> 命令。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Generate</span> <span class="string">site</span></span><br><span class="line">  <span class="attr">run:</span> <span class="string">npx</span> <span class="string">hexo</span> <span class="string">generate</span></span><br></pre></td></tr></table></figure>
+<p>该步骤用于生成静态网站，使用 Hexo 的 <code>generate</code> 命令。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Deploy</span> <span class="string">to</span> <span class="string">main</span> <span class="string">branch</span></span><br><span class="line">  <span class="attr">uses:</span> <span class="string">peaceiris/actions-gh-pages@v3</span></span><br><span class="line">  <span class="attr">with:</span></span><br><span class="line">    <span class="attr">github_token:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.GITHUB_TOKEN</span> <span class="string">&#125;&#125;</span></span><br><span class="line">    <span class="attr">publish_dir:</span> <span class="string">./public</span></span><br><span class="line">    <span class="attr">publish_branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
+<p>最后，这个步骤用于将生成的静态网站部署到 <code>main</code> 分支。它使用了一个第三方 GitHub Action：<code>peaceiris/actions-gh-pages@v3</code>。</p>
+<ul>
+<li><code>github_token: $&#123;&#123; secrets.GITHUB_TOKEN &#125;&#125;</code> 使用 GitHub 提供的令牌，以便于该工作流有权推送到 <code>main</code> 分支。</li>
+<li><code>publish_dir: ./public</code> 指定了要部署的目录，这里是 <code>./public</code>。</li>
+<li><code>publish_branch: main</code> 指定了目标部署分支，这里是 <code>main</code>。</li>
+</ul>
+<p>整体而言，这个 YAML 文件描述了一个完整的 CI&#x2F;CD 工作流程，从检出代码到设置环境，再到构建和部署，所有步骤都已定义。每次您向 <code>development</code> 分支推送更改时，这个工作流都会自动执行。</p>
 
     </div>
 
@@ -457,7 +516,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81"><span class="nav-number">1.</span> <span class="nav-text">远程仓库身份验证</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Github-CLI"><span class="nav-number">1.1.</span> <span class="nav-text">Github CLI</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GCM%EF%BC%88%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="nav-number">1.2.</span> <span class="nav-text">GCM（推荐）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93"><span class="nav-number">2.</span> <span class="nav-text">创建仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E5%BF%BD%E7%95%A5%E8%A7%84%E5%88%99"><span class="nav-number">2.1.</span> <span class="nav-text">创建忽略规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%A7%BB%E9%99%A4%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">2.2.</span> <span class="nav-text">从远程仓库移除文件夹</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="nav-number">3.</span> <span class="nav-text">连接远程仓库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%8B%E9%9A%86%E4%BB%93%E5%BA%93"><span class="nav-number">4.</span> <span class="nav-text">克隆仓库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E4%BF%9D%E6%8C%81%E5%90%8C%E6%AD%A5"><span class="nav-number">5.</span> <span class="nav-text">与远程仓库保持同步</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81"><span class="nav-number">1.</span> <span class="nav-text">远程仓库身份验证</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#GCM%EF%BC%88%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="nav-number">1.1.</span> <span class="nav-text">GCM（推荐）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Github-CLI"><span class="nav-number">1.2.</span> <span class="nav-text">Github CLI</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Init"><span class="nav-number">2.</span> <span class="nav-text">Init</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E5%BF%BD%E7%95%A5%E8%A7%84%E5%88%99"><span class="nav-number">2.1.</span> <span class="nav-text">创建忽略规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%A7%BB%E9%99%A4%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">2.2.</span> <span class="nav-text">从远程仓库移除文件夹</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Remote"><span class="nav-number">3.</span> <span class="nav-text">Remote</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Clone"><span class="nav-number">4.</span> <span class="nav-text">Clone</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Update"><span class="nav-number">5.</span> <span class="nav-text">Update</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#update-repository"><span class="nav-number">5.1.</span> <span class="nav-text">update repository</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#update-submodule"><span class="nav-number">5.2.</span> <span class="nav-text">update submodule</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Branch"><span class="nav-number">6.</span> <span class="nav-text">Branch</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-1%EF%BC%9A%E5%88%9B%E5%BB%BA%E5%B9%B6%E5%88%87%E6%8D%A2%E5%88%B0%E6%96%B0%E7%9A%84%E5%88%86%E6%94%AF"><span class="nav-number">6.1.</span> <span class="nav-text">步骤 1：创建并切换到新的分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-2%EF%BC%9A%E5%AD%98%E5%82%A8%E5%AE%8C%E6%95%B4%E7%9A%84Hexo%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6"><span class="nav-number">6.2.</span> <span class="nav-text">步骤 2：存储完整的Hexo项目文件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CI-CD"><span class="nav-number">7.</span> <span class="nav-text">CI&#x2F;CD</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#CI-CD%E5%8E%9F%E7%90%86%E5%92%8C%E5%AE%89%E5%85%A8%E6%80%A7"><span class="nav-number">7.1.</span> <span class="nav-text">CI&#x2F;CD原理和安全性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8E%9F%E7%90%86%EF%BC%9A"><span class="nav-number">7.1.0.1.</span> <span class="nav-text">原理：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83%EF%BC%9A"><span class="nav-number">7.1.0.2.</span> <span class="nav-text">运行环境：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E5%85%A8%E6%80%A7%EF%BC%9A"><span class="nav-number">7.1.0.3.</span> <span class="nav-text">安全性：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AECI-CD"><span class="nav-number">7.2.</span> <span class="nav-text">配置CI&#x2F;CD</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -535,12 +594,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">26k</span>
+    <span title="Symbols count total">25k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">24 mins.</span>
+    <span title="Reading time total">23 mins.</span>
 </div>
   <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
   </div>

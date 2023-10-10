@@ -30,7 +30,7 @@
 <meta property="og:description" content="这里是一个使用 Hexo 和 GitHub Pages 搭建个人博客的基础步骤指南。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-10-04T13:47:10.000Z">
-<meta property="article:modified_time" content="2023-10-10T09:25:29.015Z">
+<meta property="article:modified_time" content="2023-10-10T09:43:07.261Z">
 <meta property="article:author" content="jimmy">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Next">
@@ -220,7 +220,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-10-10 17:25:29" itemprop="dateModified" datetime="2023-10-10T17:25:29+08:00">2023-10-10</time>
+                <time title="Modified: 2023-10-10 17:43:07" itemprop="dateModified" datetime="2023-10-10T17:43:07+08:00">2023-10-10</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -238,14 +238,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>5.3k</span>
+              <span>1.7k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>5 mins.</span>
+              <span>2 mins.</span>
             </span>
             <div class="post-description">这里是一个使用 Hexo 和 GitHub Pages 搭建个人博客的基础步骤指南。</div>
 
@@ -258,35 +258,34 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>这里是一个使用 Hexo 和 GitHub Pages 搭建个人博客的基础步骤指南：</p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
+        <p>当然，这里是一个使用 Hexo 和 GitHub Pages 搭建个人博客的基础步骤指南：</p>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ol>
 <li><p><strong>安装 Node.js 和 NPM</strong>: 请访问 <a target="_blank" rel="noopener" href="https://nodejs.org/">Node.js 官网</a> 下载并安装 Node.js，这将同时安装 NPM（Node Package Manager）。</p>
 </li>
 <li><p><strong>安装 Git</strong>: 如果您还没有安装 Git，您需要安装它以便与 GitHub 进行交互。请访问 <a target="_blank" rel="noopener" href="https://git-scm.com/">Git 官网</a> 以下载和安装。</p>
 </li>
 </ol>
-<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><ol start="3">
+<h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><ol start="3">
 <li><strong>全局安装 Hexo</strong>: 打开命令行（Windows 下是 CMD 或 PowerShell，macOS 和 Linux 下是 Terminal），然后运行以下命令： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
  <code>-g</code>: global</li>
 </ol>
-<h2 id="初始化您的-Hexo-项目"><a href="#初始化您的-Hexo-项目" class="headerlink" title="初始化您的 Hexo 项目"></a>初始化您的 Hexo 项目</h2><ol start="4">
-<li><p><strong>创建并初始化新项目</strong>: 在命令行中，转到您希望创建项目的目录，然后运行：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init my-blog</span><br><span class="line"><span class="built_in">cd</span> my-blog</span><br><span class="line">npm install <span class="comment"># 它会查找一个名为 `package.json` 的文件。这个文件列出了项目所需的所有 NPM 包（依赖）。然后，NPM 会下载并安装这些依赖到 `my-blog` 目录下的 `node_modules` 子目录。</span></span><br></pre></td></tr></table></figure></li>
+<h3 id="初始化您的-Hexo-项目"><a href="#初始化您的-Hexo-项目" class="headerlink" title="初始化您的 Hexo 项目"></a>初始化您的 Hexo 项目</h3><ol start="4">
+<li><strong>创建并初始化新项目</strong>: 在命令行中，转到您希望创建项目的目录，然后运行： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init my-blog</span><br><span class="line"><span class="built_in">cd</span> my-blog</span><br><span class="line">npm install <span class="comment"># 它会查找一个名为 `package.json` 的文件。这个文件列出了项目所需的所有 NPM 包（依赖）。然后，NPM 会下载并安装这些依赖到 `my-blog` 目录下的 `node_modules` 子目录。</span></span><br></pre></td></tr></table></figure></li>
 </ol>
-<h2 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h2><ol start="5">
+<h3 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h3><ol start="5">
 <li><strong>启动 Hexo 服务器</strong>：在 <code>my-blog</code> 目录下运行以下命令，然后在浏览器中访问 <code>http://localhost:4000</code> 查看效果。 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></li>
 </ol>
-<h2 id="配置-Hexo"><a href="#配置-Hexo" class="headerlink" title="配置 Hexo"></a>配置 Hexo</h2><ol start="6">
+<h3 id="配置-Hexo"><a href="#配置-Hexo" class="headerlink" title="配置 Hexo"></a>配置 Hexo</h3><ol start="6">
 <li><strong>编辑配置文件</strong>: 在 <code>my-blog</code> 目录中，您会找到一个 <code>_config.yml</code> 文件。使用任意文本编辑器打开它并进行相关设置，例如您的博客标题、描述等。</li>
 </ol>
-<h2 id="创建您的第一篇文章"><a href="#创建您的第一篇文章" class="headerlink" title="创建您的第一篇文章"></a>创建您的第一篇文章</h2><ol start="7">
+<h3 id="创建第一篇文章"><a href="#创建第一篇文章" class="headerlink" title="创建第一篇文章"></a>创建第一篇文章</h3><ol start="7">
 <li><p><strong>新建文章</strong>: 运行以下命令以创建一个新文章。</p>
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;My First Post&quot;</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p><strong>编辑文章</strong>: 打开 <code>source/_posts/My-First-Post.md</code> 文件，然后开始编写您的第一篇文章。您可以使用 Markdown 语法。</p>
 </li>
 </ol>
-<h2 id="部署到-GitHub-Pages"><a href="#部署到-GitHub-Pages" class="headerlink" title="部署到 GitHub Pages"></a>部署到 GitHub Pages</h2><ol start="9">
+<h3 id="部署到-GitHub-Pages"><a href="#部署到-GitHub-Pages" class="headerlink" title="部署到 GitHub Pages"></a>部署到 GitHub Pages</h3><ol start="9">
 <li><p><strong>创建 GitHub 仓库</strong>: 访问 <a target="_blank" rel="noopener" href="https://github.com/">GitHub</a>，创建一个新的仓库，名为 <code>username.github.io</code>（<code>username</code> 是您的 GitHub 用户名）。</p>
 </li>
 <li><p><strong>配置部署</strong>: 在 <code>_config.yml</code> 文件中，找到 <code>deploy</code> 部分，并进行如下设置：</p>
@@ -300,67 +299,16 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></li>
 </ol>
 <p>您应该现在可以通过访问 <code>https://username.github.io</code> 来查看您的博客了。</p>
-<p>以上就是基础的步骤，您可以根据需要进行进一步的定制和优化，如安装主题、添加插件等。希望这对您有所帮助！</p>
-<h2 id="切换主题"><a href="#切换主题" class="headerlink" title="切换主题"></a>切换主题</h2><p><a target="_blank" rel="noopener" href="https://theme-next.js.org/">NexT - Theme for Hexo (theme-next.js.org)</a></p>
-<h2 id="在任意设备修改Blog"><a href="#在任意设备修改Blog" class="headerlink" title="在任意设备修改Blog"></a>在任意设备修改Blog</h2><p>基本思路：原有仓库的分支仅存储生成后的网页文件（public文件夹内的文件），若想在任意设备均可修改Blog，就需要Github托管所有源文件。为减少麻烦，不必创建一个新仓库，只需在原有仓库内新建一个branch存储所有源文件。甚至可以更进一步，当新branch有变更时，使用Github Action自动化部署。</p>
-<h3 id="Branch"><a href="#Branch" class="headerlink" title="Branch"></a>Branch</h3><h4 id="步骤-1：创建并切换到新的分支"><a href="#步骤-1：创建并切换到新的分支" class="headerlink" title="步骤 1：创建并切换到新的分支"></a>步骤 1：创建并切换到新的分支</h4><ol>
+<p>以上就是基础的步骤，您可以根据需要进行进一步的定制和优化，如安装主题、添加插件等。</p>
+<h3 id="切换主题"><a href="#切换主题" class="headerlink" title="切换主题"></a>切换主题</h3><p><a target="_blank" rel="noopener" href="https://theme-next.js.org/">NexT - Theme for Hexo (theme-next.js.org)</a></p>
+<h3 id="在任意设备修改Blog"><a href="#在任意设备修改Blog" class="headerlink" title="在任意设备修改Blog"></a>在任意设备修改Blog</h3><h4 id="步骤-1：创建并切换到新的分支"><a href="#步骤-1：创建并切换到新的分支" class="headerlink" title="步骤 1：创建并切换到新的分支"></a>步骤 1：创建并切换到新的分支</h4><ol>
 <li>克隆您现有的GitHub仓库（这里假设您已有一个托管在<code>main</code>分支的仓库）。 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/your_username/your_repository.git</span><br></pre></td></tr></table></figure></li>
-<li>创建一个新的分支，比如命名为<code>development</code>。 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b development</span><br></pre></td></tr></table></figure>
- <code>-b</code>: branch</li>
+<li>创建一个新的分支，比如命名为<code>development</code>。 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout development</span><br></pre></td></tr></table></figure></li>
 </ol>
 <h4 id="步骤-2：存储完整的Hexo项目文件"><a href="#步骤-2：存储完整的Hexo项目文件" class="headerlink" title="步骤 2：存储完整的Hexo项目文件"></a>步骤 2：存储完整的Hexo项目文件</h4><ol>
 <li>删除<code>main</code>分支clone的本地文件（不要删除<code>.git</code>），存储希望push到新分支的所有文件。</li>
 <li>提交这些更改并推送到GitHub的<code>development</code>分支。 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add . </span><br><span class="line">git commit -m <span class="string">&quot;Store complete Hexo project&quot;</span> </span><br><span class="line">git push origin development</span><br></pre></td></tr></table></figure></li>
 </ol>
-<h3 id="CI-CD"><a href="#CI-CD" class="headerlink" title="CI&#x2F;CD"></a>CI&#x2F;CD</h3><p>CI&#x2F;CD代表持续集成（Continuous Integration）和持续部署（Continuous Deployment）。</p>
-<ul>
-<li><strong>持续集成（CI）</strong>: 是开发团队经常（通常是每天）将代码更改集成到共享仓库中的实践。之后会自动运行各种测试和其他检查工具。</li>
-<li><strong>持续部署（CD）</strong>: 是一个自动将代码更改从共享仓库部署到生产环境的过程。</li>
-</ul>
-<p>这些工具（如GitHub Actions, Jenkins等）能自动生成静态页面，因为您可以编写脚本或配置文件来自动执行一系列命令。这些命令可以包括安装依赖项、运行测试、构建项目（如使用<code>hexo generate</code>生成静态页面）以及将构建结果推送到指定的服务器或分支。这些步骤是自动化的，通常会在您提交代码或合并分支之后立即执行。</p>
-<p>使用CI&#x2F;CD工具，您可以确保代码更改是有效的，并且它们能快速、可靠地被部署到生产环境，减少了人工操作带来的风险和延迟。</p>
-<h4 id="CI-CD原理和安全性"><a href="#CI-CD原理和安全性" class="headerlink" title="CI&#x2F;CD原理和安全性"></a>CI&#x2F;CD原理和安全性</h4><h5 id="原理："><a href="#原理：" class="headerlink" title="原理："></a>原理：</h5><p>CI&#x2F;CD 工具通常运行在一个预配置的环境（通常称为 “Runner” 或 “Agent”）中，这个环境具备执行构建、测试和部署任务所需的所有依赖和权限。当触发某个事件（如代码推送或合并请求）时，这些工具会按照您在配置文件中定义的步骤执行一系列命令。</p>
-<h5 id="运行环境："><a href="#运行环境：" class="headerlink" title="运行环境："></a>运行环境：</h5><p>这些 Runner 或 Agent 可能运行在各种环境中，从完全托管的云实例到您自己的硬件。在 GitHub Actions 的情况下，它们通常运行在 GitHub 托管的虚拟环境（如 <code>ubuntu-latest</code> 或 <code>windows-latest</code>）中。</p>
-<h5 id="安全性："><a href="#安全性：" class="headerlink" title="安全性："></a>安全性：</h5><p>作为服务提供方，GitHub 采取了多种措施以保证 CI&#x2F;CD 环境的安全：</p>
-<ol>
-<li>隔离：每个工作流程在其自己的环境中运行，与其他工作流程相隔离。</li>
-<li>限制权限：默认情况下，Runner 的权限被严格限制。</li>
-<li>审计和监控：所有 CI&#x2F;CD 操作都可以被审计和监控。</li>
-<li>密码和密钥管理：使用诸如 <code>secrets</code> 的机制，安全地管理敏感信息。</li>
-</ol>
-<h4 id="配置CI-CD"><a href="#配置CI-CD" class="headerlink" title="配置CI&#x2F;CD"></a>配置CI&#x2F;CD</h4><p>使用GitHub Actions或其他CI&#x2F;CD工具，自动从<code>development</code>分支生成静态页面，并推送到<code>main</code>分支。这通常通过YAML文件来配置，该文件位于仓库的<code>.github/workflows</code>目录中。</p>
-<p>以下是一个简单的GitHub Actions YAML文件示例，用于从<code>development</code>分支生成Hexo静态页面并推送到<code>main</code>分支。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">Deploy</span> <span class="string">Hexo</span></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line">  <span class="attr">push:</span></span><br><span class="line">    <span class="attr">branches:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">development</span></span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">build-deploy:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Checkout</span> <span class="string">development</span> <span class="string">branch</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/checkout@v2</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">ref:</span> <span class="string">development</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Set</span> <span class="string">up</span> <span class="string">Node.js</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/setup-node@v2</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">node-version:</span> <span class="string">&#x27;14&#x27;</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Cache</span> <span class="string">dependencies</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/cache@v2</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">path:</span> <span class="string">~/.npm</span></span><br><span class="line">          <span class="attr">key:</span> <span class="string">$&#123;&#123;</span> <span class="string">runner.os</span> <span class="string">&#125;&#125;-node-$&#123;&#123;</span> <span class="string">hashFiles(&#x27;**/package-lock.json&#x27;)</span> <span class="string">&#125;&#125;</span></span><br><span class="line">          <span class="attr">restore-keys:</span> <span class="string">$&#123;&#123;</span> <span class="string">runner.os</span> <span class="string">&#125;&#125;-node-</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Install</span> <span class="string">Dependencies</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">npm</span> <span class="string">install</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Generate</span> <span class="string">site</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">npx</span> <span class="string">hexo</span> <span class="string">generate</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Deploy</span> <span class="string">to</span> <span class="string">main</span> <span class="string">branch</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">peaceiris/actions-gh-pages@v3</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">github_token:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.GITHUB_TOKEN</span> <span class="string">&#125;&#125;</span></span><br><span class="line">          <span class="attr">publish_dir:</span> <span class="string">./public</span></span><br><span class="line">          <span class="attr">publish_branch:</span> <span class="string">main</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>这样，每次您在<code>development</code>分支做出更改并推送到GitHub后，CI&#x2F;CD工具都会自动构建您的网站并将其部署到<code>main</code>分支。具体每个部分的解释如下：<br>当然，我会详细解释我之前提供的 GitHub Actions YAML 文件。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">Deploy</span> <span class="string">Hexo</span></span><br></pre></td></tr></table></figure>
-<p>这一行定义了该 GitHub Actions 工作流的名字，名为 “Deploy Hexo”。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">on:</span></span><br><span class="line">  <span class="attr">push:</span></span><br><span class="line">    <span class="attr">branches:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">development</span></span><br></pre></td></tr></table></figure>
-<p>这一部分定义了触发此工作流程的条件。在这里，任何推送（<code>push</code>）到<code>development</code>分支的操作都会触发这个工作流程。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">build-deploy:</span></span><br></pre></td></tr></table></figure>
-<p>在这里，<code>jobs</code>字段定义了一个或多个作业（job），每个作业都包含一系列的步骤（steps）。在这个例子中，有一个名为<code>build-deploy</code>的作业。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br></pre></td></tr></table></figure>
-<p>这一行定义了作业运行的环境，使用的是最新版本的 Ubuntu。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">steps:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Checkout</span> <span class="string">development</span> <span class="string">branch</span></span><br></pre></td></tr></table></figure>
-<p>以下是作业的步骤。第一个步骤名为“Checkout development branch”。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">uses:</span> <span class="string">actions/checkout@v2</span></span><br><span class="line"><span class="attr">with:</span></span><br><span class="line">  <span class="attr">ref:</span> <span class="string">development</span></span><br></pre></td></tr></table></figure>
-<p>该步骤使用一个名为 <code>actions/checkout@v2</code> 的预建动作，用于检出代码。这里特定检出了<code>development</code>分支。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Set</span> <span class="string">up</span> <span class="string">Node.js</span></span><br><span class="line">  <span class="attr">uses:</span> <span class="string">actions/setup-node@v2</span></span><br><span class="line">  <span class="attr">with:</span></span><br><span class="line">    <span class="attr">node-version:</span> <span class="string">&#x27;14&#x27;</span></span><br></pre></td></tr></table></figure>
-<p>这个步骤用于设置 Node.js 环境。它使用了 <code>actions/setup-node@v2</code> 动作，并指定使用版本为 ‘14’ 的 Node.js。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Cache</span> <span class="string">dependencies</span></span><br><span class="line">  <span class="attr">uses:</span> <span class="string">actions/cache@v2</span></span><br><span class="line">  <span class="attr">with:</span></span><br><span class="line">    <span class="attr">path:</span> <span class="string">~/.npm</span></span><br><span class="line">    <span class="attr">key:</span> <span class="string">$&#123;&#123;</span> <span class="string">runner.os</span> <span class="string">&#125;&#125;-node-$&#123;&#123;</span> <span class="string">hashFiles(&#x27;**/package-lock.json&#x27;)</span> <span class="string">&#125;&#125;</span></span><br><span class="line">    <span class="attr">restore-keys:</span> <span class="string">$&#123;&#123;</span> <span class="string">runner.os</span> <span class="string">&#125;&#125;-node-</span></span><br></pre></td></tr></table></figure>
-<p>这个步骤用于缓存依赖项，以加速后续运行。这里缓存了 Node.js 的依赖项。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Install</span> <span class="string">Dependencies</span></span><br><span class="line">  <span class="attr">run:</span> <span class="string">npm</span> <span class="string">install</span></span><br></pre></td></tr></table></figure>
-<p>此步骤用于安装项目依赖项，使用了 <code>npm install</code> 命令。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Generate</span> <span class="string">site</span></span><br><span class="line">  <span class="attr">run:</span> <span class="string">npx</span> <span class="string">hexo</span> <span class="string">generate</span></span><br></pre></td></tr></table></figure>
-<p>该步骤用于生成静态网站，使用 Hexo 的 <code>generate</code> 命令。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Deploy</span> <span class="string">to</span> <span class="string">main</span> <span class="string">branch</span></span><br><span class="line">  <span class="attr">uses:</span> <span class="string">peaceiris/actions-gh-pages@v3</span></span><br><span class="line">  <span class="attr">with:</span></span><br><span class="line">    <span class="attr">github_token:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.GITHUB_TOKEN</span> <span class="string">&#125;&#125;</span></span><br><span class="line">    <span class="attr">publish_dir:</span> <span class="string">./public</span></span><br><span class="line">    <span class="attr">publish_branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
-<p>最后，这个步骤用于将生成的静态网站部署到 <code>main</code> 分支。它使用了一个第三方 GitHub Action：<code>peaceiris/actions-gh-pages@v3</code>。</p>
-<ul>
-<li><code>github_token: $&#123;&#123; secrets.GITHUB_TOKEN &#125;&#125;</code> 使用 GitHub 提供的令牌，以便于该工作流有权推送到 <code>main</code> 分支。</li>
-<li><code>publish_dir: ./public</code> 指定了要部署的目录，这里是 <code>./public</code>。</li>
-<li><code>publish_branch: main</code> 指定了目标部署分支，这里是 <code>main</code>。</li>
-</ul>
-<p>整体而言，这个 YAML 文件描述了一个完整的 CI&#x2F;CD 工作流程，从检出代码到设置环境，再到构建和部署，所有步骤都已定义。每次您向 <code>development</code> 分支推送更改时，这个工作流都会自动执行。</p>
 
     </div>
 
@@ -460,7 +408,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-Hexo"><span class="nav-number">2.</span> <span class="nav-text">安装 Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E6%82%A8%E7%9A%84-Hexo-%E9%A1%B9%E7%9B%AE"><span class="nav-number">3.</span> <span class="nav-text">初始化您的 Hexo 项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88"><span class="nav-number">4.</span> <span class="nav-text">本地预览</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-Hexo"><span class="nav-number">5.</span> <span class="nav-text">配置 Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E6%82%A8%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0"><span class="nav-number">6.</span> <span class="nav-text">创建您的第一篇文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E5%88%B0-GitHub-Pages"><span class="nav-number">7.</span> <span class="nav-text">部署到 GitHub Pages</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%87%E6%8D%A2%E4%B8%BB%E9%A2%98"><span class="nav-number">8.</span> <span class="nav-text">切换主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8%E4%BB%BB%E6%84%8F%E8%AE%BE%E5%A4%87%E4%BF%AE%E6%94%B9Blog"><span class="nav-number">9.</span> <span class="nav-text">在任意设备修改Blog</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Branch"><span class="nav-number">9.1.</span> <span class="nav-text">Branch</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-1%EF%BC%9A%E5%88%9B%E5%BB%BA%E5%B9%B6%E5%88%87%E6%8D%A2%E5%88%B0%E6%96%B0%E7%9A%84%E5%88%86%E6%94%AF"><span class="nav-number">9.1.1.</span> <span class="nav-text">步骤 1：创建并切换到新的分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-2%EF%BC%9A%E5%AD%98%E5%82%A8%E5%AE%8C%E6%95%B4%E7%9A%84Hexo%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6"><span class="nav-number">9.1.2.</span> <span class="nav-text">步骤 2：存储完整的Hexo项目文件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CI-CD"><span class="nav-number">9.2.</span> <span class="nav-text">CI&#x2F;CD</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#CI-CD%E5%8E%9F%E7%90%86%E5%92%8C%E5%AE%89%E5%85%A8%E6%80%A7"><span class="nav-number">9.2.1.</span> <span class="nav-text">CI&#x2F;CD原理和安全性</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%8E%9F%E7%90%86%EF%BC%9A"><span class="nav-number">9.2.1.1.</span> <span class="nav-text">原理：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83%EF%BC%9A"><span class="nav-number">9.2.1.2.</span> <span class="nav-text">运行环境：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%AE%89%E5%85%A8%E6%80%A7%EF%BC%9A"><span class="nav-number">9.2.1.3.</span> <span class="nav-text">安全性：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%85%8D%E7%BD%AECI-CD"><span class="nav-number">9.2.2.</span> <span class="nav-text">配置CI&#x2F;CD</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-Hexo"><span class="nav-number">2.</span> <span class="nav-text">安装 Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E6%82%A8%E7%9A%84-Hexo-%E9%A1%B9%E7%9B%AE"><span class="nav-number">3.</span> <span class="nav-text">初始化您的 Hexo 项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88"><span class="nav-number">4.</span> <span class="nav-text">本地预览</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-Hexo"><span class="nav-number">5.</span> <span class="nav-text">配置 Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0"><span class="nav-number">6.</span> <span class="nav-text">创建第一篇文章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E5%88%B0-GitHub-Pages"><span class="nav-number">7.</span> <span class="nav-text">部署到 GitHub Pages</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%87%E6%8D%A2%E4%B8%BB%E9%A2%98"><span class="nav-number">8.</span> <span class="nav-text">切换主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8%E4%BB%BB%E6%84%8F%E8%AE%BE%E5%A4%87%E4%BF%AE%E6%94%B9Blog"><span class="nav-number">9.</span> <span class="nav-text">在任意设备修改Blog</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-1%EF%BC%9A%E5%88%9B%E5%BB%BA%E5%B9%B6%E5%88%87%E6%8D%A2%E5%88%B0%E6%96%B0%E7%9A%84%E5%88%86%E6%94%AF"><span class="nav-number">9.1.</span> <span class="nav-text">步骤 1：创建并切换到新的分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-2%EF%BC%9A%E5%AD%98%E5%82%A8%E5%AE%8C%E6%95%B4%E7%9A%84Hexo%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6"><span class="nav-number">9.2.</span> <span class="nav-text">步骤 2：存储完整的Hexo项目文件</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -538,12 +486,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">26k</span>
+    <span title="Symbols count total">25k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">24 mins.</span>
+    <span title="Reading time total">23 mins.</span>
 </div>
   <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
   </div>
