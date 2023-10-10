@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Jimmy&#39;s Garden</title>
+  
+  <subtitle>A boy used to exist here: Reading, Thinking and Writting...</subtitle>
+  <link href="https://daaasein.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://daaasein.github.io/"/>
+  <updated>2023-10-10T09:25:29.015Z</updated>
+  <id>https://daaasein.github.io/</id>
+  
+  <author>
+    <name>jimmy</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Boy or Man, that is the question...</title>
+    <link href="https://daaasein.github.io/2023/10/04/Boy-or-Man-that-is-the-question/"/>
+    <id>https://daaasein.github.io/2023/10/04/Boy-or-Man-that-is-the-question/</id>
+    <published>2023-10-04T15:30:24.000Z</published>
+    <updated>2023-10-10T09:25:29.015Z</updated>
+    
+    
+    <summary type="html">男孩还是男人，这是一个问题。</summary>
+    
+    
+    
+    <category term="Journals" scheme="https://daaasein.github.io/categories/Journals/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Create a blog</title>
+    <link href="https://daaasein.github.io/2023/10/04/Create-a-blog/"/>
+    <id>https://daaasein.github.io/2023/10/04/Create-a-blog/</id>
+    <published>2023-10-04T13:47:10.000Z</published>
+    <updated>2023-10-10T09:25:29.015Z</updated>
+    
+    
+    <summary type="html">这里是一个使用 Hexo 和 GitHub Pages 搭建个人博客的基础步骤指南。</summary>
+    
+    
+    
+    <category term="Skills" scheme="https://daaasein.github.io/categories/Skills/"/>
+    
+    
+    <category term="Hexo" scheme="https://daaasein.github.io/tags/Hexo/"/>
+    
+    <category term="Next" scheme="https://daaasein.github.io/tags/Next/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Dialogue with ChatGPT</title>
+    <link href="https://daaasein.github.io/2023/10/03/Dialogue-with-ChatGPT/"/>
+    <id>https://daaasein.github.io/2023/10/03/Dialogue-with-ChatGPT/</id>
+    <published>2023-10-02T16:15:28.000Z</published>
+    <updated>2023-10-10T09:25:29.016Z</updated>
+    
+    
+    <summary type="html">回答延伸的问题，承认错误，挑战错误的前提，拒绝不妥的要求。如果人人都这样该多好。</summary>
+    
+    
+    
+    <category term="Journals" scheme="https://daaasein.github.io/categories/Journals/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Chocolatey</title>
+    <link href="https://daaasein.github.io/2023/10/02/Chocolatey/"/>
+    <id>https://daaasein.github.io/2023/10/02/Chocolatey/</id>
+    <published>2023-10-01T16:37:59.000Z</published>
+    <updated>2023-10-10T09:25:29.015Z</updated>
+    
+    
+    <summary type="html">Chocolatey是适用于Windows的包管理工具，类似Mac下的Homebrew，Linux下的APT等。</summary>
+    
+    
+    
+    <category term="Skills" scheme="https://daaasein.github.io/categories/Skills/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Git</title>
+    <link href="https://daaasein.github.io/2023/09/30/Git/"/>
+    <id>https://daaasein.github.io/2023/09/30/Git/</id>
+    <published>2023-09-29T16:37:25.000Z</published>
+    <updated>2023-10-10T09:25:29.016Z</updated>
+    
+    
+    <summary type="html">展示Git的基本操作步骤，以及如何连接Github等远程仓库。</summary>
+    
+    
+    
+    <category term="Skills" scheme="https://daaasein.github.io/categories/Skills/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Zsh</title>
+    <link href="https://daaasein.github.io/2023/09/30/Zsh/"/>
+    <id>https://daaasein.github.io/2023/09/30/Zsh/</id>
+    <published>2023-09-29T16:37:19.000Z</published>
+    <updated>2023-10-10T09:25:29.017Z</updated>
+    
+    
+    <summary type="html">展示Zsh设置代理、清除代理缓存、检查当前代理的方式。</summary>
+    
+    
+    
+    <category term="Skills" scheme="https://daaasein.github.io/categories/Skills/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Setup a new Windows</title>
+    <link href="https://daaasein.github.io/2023/09/30/Setup-a-new-Windows/"/>
+    <id>https://daaasein.github.io/2023/09/30/Setup-a-new-Windows/</id>
+    <published>2023-09-29T16:31:52.000Z</published>
+    <updated>2023-10-10T09:25:29.016Z</updated>
+    
+    
+    <summary type="html">本文展示了设置PowerShell代理，安装WSL2并设置Zsh为默认shell，以及APT的基本使用。这些可以作为新手设置一台新Windows的基本操作流程。</summary>
+    
+    
+    
+    <category term="Skills" scheme="https://daaasein.github.io/categories/Skills/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Setup a new Mac</title>
+    <link href="https://daaasein.github.io/2023/09/30/Setup-a-new-Mac/"/>
+    <id>https://daaasein.github.io/2023/09/30/Setup-a-new-Mac/</id>
+    <published>2023-09-29T16:25:45.000Z</published>
+    <updated>2023-10-10T09:25:29.016Z</updated>
+    
+    
+    <summary type="html">本文展示了结合Homebrew,iCloud,Github等工具，设置一台新Mac的基本操作流程。</summary>
+    
+    
+    
+    <category term="Skills" scheme="https://daaasein.github.io/categories/Skills/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Docker</title>
+    <link href="https://daaasein.github.io/2023/09/29/Docker/"/>
+    <id>https://daaasein.github.io/2023/09/29/Docker/</id>
+    <published>2023-09-28T16:37:44.000Z</published>
+    <updated>2023-10-10T09:25:29.016Z</updated>
+    
+    
+    <summary type="html">Docker 是一个开源的应用容器引擎，用于容器化应用并自动化部署。</summary>
+    
+    
+    
+    <category term="Skills" scheme="https://daaasein.github.io/categories/Skills/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Gone old days</title>
+    <link href="https://daaasein.github.io/2020/09/26/Gone-old-days/"/>
+    <id>https://daaasein.github.io/2020/09/26/Gone-old-days/</id>
+    <published>2020-09-26T15:45:42.000Z</published>
+    <updated>2023-10-10T09:25:29.016Z</updated>
+    
+    
+    <summary type="html">轻飘飘的旧时光就这么溜走，转头回去看看时已匆匆数年。</summary>
+    
+    
+    
+    <category term="Journals" scheme="https://daaasein.github.io/categories/Journals/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Youth</title>
+    <link href="https://daaasein.github.io/2019/09/10/Youth/"/>
+    <id>https://daaasein.github.io/2019/09/10/Youth/</id>
+    <published>2019-09-10T15:45:42.000Z</published>
+    <updated>2023-10-10T09:25:29.016Z</updated>
+    
+    
+    <summary type="html">The sands of time...</summary>
+    
+    
+    
+    <category term="Journals" scheme="https://daaasein.github.io/categories/Journals/"/>
+    
+    
+  </entry>
+  
+</feed>
