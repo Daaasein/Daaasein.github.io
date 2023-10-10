@@ -7,8 +7,9 @@ description: "本文展示了设置PowerShell代理，安装WSL2并设置Zsh为�
 ---
 
 # Shell
+Don't use ```winget```, it is stupid......Chocolatey is more recommanded: [[Chocolatey]].
 ## Proxy
-
+同时需要打开Clash的Allow LAN。
 ### Set by Shell (only one time)
 
 ```shell
@@ -33,6 +34,9 @@ set HTTPS_PROXY=http://proxy.server.com:port/
 	```
 
 3. Double click to run. It will set proxy as user env.
+
+# Git
+[[Git]]
 
 # WSL 2
 
@@ -93,6 +97,9 @@ wsl --setdefault <DistributionName> # when use wsl command
 # Linux
 
 ## Set zsh as default shell
+Instand reading following, it is more recommanded to using ```oh-my-zsh```: [Oh My Zsh](https://ohmyz.sh/)
+And there are some interesting usages such as: [possatti/pokemonsay(github.com)](https://github.com/possatti/pokemonsay)
+How to config proxy? Look at here: [[Zsh]]
 
 1. Check which shell is using:
 	```bash
@@ -140,9 +147,12 @@ wsl --setdefault <DistributionName> # when use wsl command
 
 	Then run ```source ~/.zshrc```.
 
-## APT Command
+## CLI
 APT is for Linux, generally as default package tool in Ubuntu (one of Linux distribution).
-### Update
+But instand reading following, it is more recommanded to use ```Linuxbrew```, because Mac OS can also use it and Brewfile can share between them: [Homebrew — The Missing Package Manager for macOS (or Linux)](https://brew.sh/)
+
+### ~~APT~~
+#### Update
 
 Update packages list && Update packages：
 
@@ -151,13 +161,13 @@ sudo apt update  # keep list latest
 sudo apt upgrade  # indeed update packages
 ```
 
-### Install
+#### Install
 
 ```bash
 sudo apt install <package-name>
 ```
 
-### Remove
+#### Remove
 
 1. Remove package:
 	```bash
@@ -181,7 +191,8 @@ sudo apt install <package-name>
    ```
 
    
-# AutoHotkey
+# ~~AutoHotkey~~
+It is not a efficient method to use PowerShell...And after restart it will not auto restart...Bad idea!!
 ## Open PowerShell
 ```ahk
 ^Space:: ; Ctrl + Space
