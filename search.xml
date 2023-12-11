@@ -747,4 +747,26 @@
         <category>Skills</category>
       </categories>
   </entry>
+  <entry>
+    <title>Todo apps</title>
+    <url>/2023/12/09/Todo-app/</url>
+    <content><![CDATA[<h1 id="Todo类app使用心得"><a href="#Todo类app使用心得" class="headerlink" title="Todo类app使用心得"></a>Todo类app使用心得</h1><h2 id="一、摘要"><a href="#一、摘要" class="headerlink" title="一、摘要"></a>一、摘要</h2><p>Todo类app，前后单独使用过：水滴清单，Microsoft Todo，滴答清单，飞书里的Task，iOS备忘录，iOS日历……一直都觉得不满意，最近似乎找到了一种良好实践。</p>
+<p>简而言之：Time-sensitive类任务使用iOS日历，Time-insensitive类任务使用iOS备忘录。</p>
+<p>（工作任务应使用其他软件，以满足复杂的任务管理需求、保证工作-生活分离）</p>
+<h2 id="二、两类任务：Time-sensitive-Time-insensitive"><a href="#二、两类任务：Time-sensitive-Time-insensitive" class="headerlink" title="二、两类任务：Time-sensitive &amp; Time-insensitive"></a>二、两类任务：Time-sensitive &amp; Time-insensitive</h2><p>首先，我们可以把任务分为两类：Time-sensitive和Time-insensitive。</p>
+<p>Time-sensitive类任务，天然应该和日历结合。这是很自然的联系：既然日历指代（隐喻）时间，那么占据一段时间的任务就应该占据日历的一部分。因此，这类任务适合使用日历app。</p>
+<p>Time-insensitive类任务，严格来说尚未成为任务（未分配时间），而是某种模糊的想法。往往它们还不是最终结果，在分配时间之前会再做一些调整。因此，本质上这类任务是notes，适合使用备忘录app。当最终确定并分配时间后，它们将进入日历app中。</p>
+<p>我们可以重新定义这两类任务的本质，一类是todo（Time-sensitive），一类是notes（Time-insensitive）。</p>
+<h2 id="三、为什么这可以成为一种良好实践？"><a href="#三、为什么这可以成为一种良好实践？" class="headerlink" title="三、为什么这可以成为一种良好实践？"></a>三、为什么这可以成为一种良好实践？</h2><p>我认为，曾经种种app的不满意体验，主要原因是：既没有将上述两类任务的划分沉淀为产品功能，也没有引导用户进行主动划分。</p>
+<p>Todo类app往往专注于纯粹的todo需求——任务提醒、分组、重要性分级，而忽视了notes需求，也不引导用户划分这两类任务，间接导致用户将大量notes作为todo录入。</p>
+<p>例如：用户看到一篇文章提到个人博客，于是也想搭建一个博客，然后在某个Todo类app录入“搭建个人博客”。因为这条todo太模糊，所以无法分配时间。因为Todo类app没有针对notes场景设计，用户没有地方进一步细化任务，这条任务就被搁置了。它大概率将被永久搁置，孤独地躺在冰冷的列表里——徒增列表混乱程度，同时浪费了一个将idea转化为action的可能。</p>
+<p>而通过主动划分两类任务，分别使用日历app和备忘录app，必要时再进行信息流动（备忘录-&gt;日历），可以显著避免混乱。由于备忘录专为notes场景（Time-insensitive类任务）设计，录入任务后可以进一步录入上下文、细化任务，提高idea转化为action的可能。</p>
+<h2 id="四、这是可能的最佳实践吗？"><a href="#四、这是可能的最佳实践吗？" class="headerlink" title="四、这是可能的最佳实践吗？"></a>四、这是可能的最佳实践吗？</h2><p>不是最佳实践，但我认为是一种良好实践。因为这种方案依赖于用户主动划分任务类型，并手动调度两个不同的app相互配合，其背后的方法论并没有沉淀在某个单一产品当中。</p>
+<p>抽象而言，方法论的实现方式有很多，可以被人实现（依赖管理人员的经验），也可以被流程实现（依赖从经验沉淀的流程）。其中，流程既可以发生在线下（由可替代的人员执行），也可以发生在线上（由软件交互完成）。</p>
+<p>具体来说，上述的实践虽然依赖从经验沉淀的流程，但需要可替代的人员来执行（划分任务类型、手动调度两个app相互配合），存在重复性操作，因此并不是最佳实践。</p>
+]]></content>
+      <categories>
+        <category>Skills</category>
+      </categories>
+  </entry>
 </search>

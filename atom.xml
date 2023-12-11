@@ -6,7 +6,7 @@
   <link href="https://daaasein.github.io/atom.xml" rel="self"/>
   
   <link href="https://daaasein.github.io/"/>
-  <updated>2023-10-10T09:25:29.015Z</updated>
+  <updated>2023-12-11T08:55:33.924Z</updated>
   <id>https://daaasein.github.io/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Todo apps</title>
+    <link href="https://daaasein.github.io/2023/12/09/Todo-app/"/>
+    <id>https://daaasein.github.io/2023/12/09/Todo-app/</id>
+    <published>2023-12-08T16:37:19.000Z</published>
+    <updated>2023-12-11T08:55:33.924Z</updated>
+    
+    
+    <summary type="html">使用Todo类apps的体验，与一种良好实践。</summary>
+    
+    
+    
+    <category term="Skills" scheme="https://daaasein.github.io/categories/Skills/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Boy or Man, that is the question...</title>
